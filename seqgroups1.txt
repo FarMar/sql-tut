@@ -1,0 +1,40 @@
+id	name	description
+1	D18-gDNA	D18 genome assembly contigs, from Biokanga, May 2015
+2	D36-s2-tr	D36 stage 2 tr assembly, from Trinity, Feb 2014
+3	D36-s34-tr	D36 stage 3-4 tr assembly, from Trinity, Feb 2014
+4	augustus-D18g	Augustus-predicted gene sequences, from D18-gDNA contigs, June 2015
+5	R35-s2-tr	R35 stage 2 tr assembly, from Trinity, Feb 2014
+6	R35-s34-tr	R35 stage 3-4 tr assembly, from Trinity, Feb 2014
+7	P36-s2-tr	P36 stage 2 tr assembly, from Trinity, Feb 2014
+8	P36-s34-tr	P36 stage 3-4 tr assembly, from Trinity, Feb 2014
+9	P36-s8-tr	P36 stage 8 tr assembly, from Biokanga, July 2015
+10	P36-s10-tr	P36 stage 10 tr assembly, from Biokanga, July 2015
+11	P36-s8-ES-tr	P36 stage 8 embryo sac tr assembly, from Biokanga, July 2015
+12	P36-s10-ES-tr	P36 stage 10 embryo sac tr assembly, from Biokanga, July 2015
+13	loalop115-s2-tr	loalop115 stage 2 tr assembly, from Trinity, Feb 2014
+14	loalop115-s34-tr	loalop115 stage 3-4 tr assembly, from Trinity, Feb 2014
+15	loalop119-s2-tr	loalop119 stage 2 tr assembly, from Biokanga, April 2015
+16	loalop119-s34-tr	loalop119 stage 3-4 tr assembly, from Biokanga, April 2015
+17	loaLOP125-s2-tr	loaLOP125 stage 2 tr assembly, from Biokanga, April 2015
+18	loaLOP125-s34-tr	loaLOP125 stage 3-4 tr assembly, from Biokanga, April 2015
+19	loaLOP134-s2-tr	loaLOP134 stage 2 tr assembly, from Trinity, Feb 2014
+20	loaLOP134-s34-tr	loaLOP134 stage 3-4 tr assembly, from Trinity, Feb 2014
+21	Rmix-s2-tr	R35+loalop115+loaLOP134 stage 2 combined tr assembly, from Trinity, Feb 2014
+22	Rmix-s34-tr	R35+loalop115+loaLOP134 stage 3-4 combined tr assembly, from Trinity, Feb 2014
+23	D36-Leaf-tr	D36 Leaf tr assembly, from Biokanga, Nov 2015
+24	D36-s6-tr	D36 stage 6 tr assembly, from Biokanga, Aug 2017
+25	D36-s8-tr	D36 stage 8 tr assembly, from Biokanga, Aug 2017
+26	D36-s10-tr	D36 stage 10 tr assembly, from Biokanga, Aug 2017
+27	R35pNE5-s2-tr	R35 stage 2 tr assembly, from Biokanga, Aug 2016
+28	R35pNE5-s34-tr	R35 stage 3-4 tr assembly, from Biokanga, Aug 2016
+29	R35pNE5-Leaf-tr	R35 Leaf tr assembly, from Biokanga, Nov 2015
+30	loaLOP135-Leaf-tr	loaLOP135 Leaf tr assembly, from Biokanga, August 2016
+31	LOAlop138-Leaf-tr	LOAlop138 Leaf tr assembly, from Biokanga, August 2016
+32	loaLOP165-Leaf-tr	loaLOP165 Leaf tr assembly, from Biokanga, August 2016
+33	P36-s6-tr	P36 stage 6 tr assembly, from Biokanga, August 2017
+34	A35-s34-tr	A35 stage 3-4 tr assembly, from Biokanga, July 2016
+35	A36-s34-tr	A36 stage 3-4 tr assembly, from Biokanga, July 2016
+36	A36-s4-tr	A36 stage 4 tr assembly, from Biokanga, July 2016
+37	A36loa1-s34-tr	A36-loa1 stage 3-4 tr assembly, from Biokanga, July 2016
+38	A36loa1-s4-tr	A36-loa1 stage 4 tr assembly, from Biokanga, July 2016
+39	D18-s234-cDNA	D18 stage 2-4 cDNA assembly, from Biokanga, July 2016

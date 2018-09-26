@@ -1,0 +1,48 @@
+id	name	species	description
+1	D18-gDNA	Hieracium piloselloides	whole genome DNA
+2	D36-s2-tr	Hieracium piloselloides	Stage 2, whole ovule RNASeq
+3	D36-s34-tr	Hieracium piloselloides	Stage 3-4, whole ovule RNASeq
+4	R35-s2-tr	Hieracium praealtum	Stage 2, whole ovule RNASeq
+5	R35-s34-tr	Hieracium praealtum	Stage 3-4, whole ovule RNASeq
+6	P36-s2-tr	Hieracium pilosella	Stage 2, whole ovule RNASeq
+7	P36-s34-tr	Hieracium pilosella	Stage 3-4, whole ovule RNASeq
+8	P36-s8-tr	Hieracium pilosella	Stage 8, whole ovule RNASeq
+9	P36-s10-tr	Hieracium pilosella	Stage 10, whole ovule RNASeq
+10	P36-s8-ES-tr	Hieracium pilosella	Stage 8, embryo sac, laser captured, RNASeq
+11	P36-s10-ES-tr	Hieracium pilosella	Stage 10, embryo sac, laser captured, RNASeq
+12	loalop115-s2-tr	Hieracium mutant loalop115	Stage 2, whole ovule RNASeq
+13	loalop115-s34-tr	Hieracium mutant loalop115	Stage 3-4, whole ovule RNASeq
+14	loalop119-s2-tr	Hieracium mutant loalop119	Stage 2, whole ovule RNASeq
+15	loalop119-s34-tr	Hieracium mutant loalop119	Stage 3-4, whole ovule RNASeq
+16	loaLOP125-s2-tr	Hieracium mutant loaLOP125	Stage 2, whole ovule RNASeq
+17	loaLOP125-s34-tr	Hieracium mutant loaLOP125	Stage 3-4, whole ovule RNASeq
+18	loaLOP134-s2-tr	Hieracium mutant loaLOP134	Stage 2, whole ovule RNASeq
+19	loaLOP134-s34-tr	Hieracium mutant loaLOP134	Stage 3-4, whole ovule RNASeq
+20	D36-Leaf-tr	Hieracium piloselloides	Leaf tissue RNASeq
+21	D36-s6-tr	Hieracium piloselloides	Stage 6, whole ovule RNASeq
+22	D36-s8-tr	Hieracium piloselloides	Stage 8, whole ovule RNASeq
+23	D36-s10-tr	Hieracium piloselloides	Stage 10, whole ovule RNASeq
+24	R35pNE5-s2-tr	Hieracium praealtum	Stage 2, whole ovule RNASeq
+25	R35pNE5-s34-tr	Hieracium praealtum	Stage 3-4, whole ovule RNASeq
+26	R35pNE5-Leaf-tr	Hieracium praealtum	Leaf tissue RNASeq
+27	R35T-Leaf-tr	Hieracium praealtum	Leaf tissue RNASeq
+28	loalop115-Leaf-tr	Hieracium mutant loalop115	Leaf tissue RNASeq
+29	loaLOP125-Leaf-tr	Hieracium mutant loaLOP125	Leaf tissue RNASeq
+30	loaLOP134-Leaf-tr	Hieracium mutant loaLOP134	Leaf tissue RNASeq
+31	LOAlop116-Leaf-tr	Hieracium mutant LOAlop116	Leaf tissue RNASeq
+32	loaLOP135-Leaf-tr	Hieracium mutant loaLOP135	Leaf tissue RNASeq
+33	LOAlop138-Leaf-tr	Hieracium mutant LOAlop138	Leaf tissue RNASeq
+34	loaLOP165-Leaf-tr	Hieracium mutant loaLOP165	Leaf tissue RNASeq
+35	P36-s6-tr	Hieracium pilosella	Stage 6, whole ovule RNASeq
+36	AutE2-s8-ES-tr	Hieracium AutE2	Stage 8, embryo sac, laser captured, RNASeq
+37	AutE2-s10-ES-tr	Hieracium AutE2	Stage 10, embryo sac, laser captured, RNASeq
+38	AutE28-s8-ES-tr	Hieracium AutE28	Stage 8, embryo sac, laser captured, RNASeq
+39	AutE28-s10-ES-tr	Hieracium AutE28	Stage 10, embryo sac, laser captured, RNASeq
+40	AutE196-s8-ES-tr	Hieracium AutE196	Stage 8, embryo sac, laser captured, RNASeq
+41	AutE196-s10-ES-tr	Hieracium AutE196	Stage 10, embryo sac, laser captured, RNASeq
+42	A35-s34-tr	Hieracium auranticum A35	Stage 3-4, whole ovule RNASeq
+43	A36-s34-tr	Hieracium auranticum A36	Stage 3-4, whole ovule RNASeq
+44	A36-s4-tr	Hieracium auranticum A36	Stage 4, whole ovule RNASeq
+45	A36loa1-s34-tr	Hieracium auranticum A36-loa1	Stage 3-4, whole ovule RNASeq
+46	A36loa1-s4-tr	Hieracium auranticum A36-loa1	Stage 4, whole ovule RNASeq
+47	D18-s234-cDNA	Hieracium piloselloides	Stage 2-4, whole ovule cDNA

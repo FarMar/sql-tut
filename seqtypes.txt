@@ -1,0 +1,11 @@
+id	type
+1	genomeAssembly
+2	trAssembly
+3	pseudoChrom
+4	BAC
+5	chromosome
+6	CDS
+7	cDNA
+8	protein
+9	EST
+10	other

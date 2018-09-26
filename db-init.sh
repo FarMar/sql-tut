@@ -69,7 +69,7 @@ CREATE TABLE alignedannot (
 	species text,
 	source text,
 	method text,
-	score text
+	score text,
 	FOREIGN KEY (onSequence) REFERENCES sequence(id)
 );
 

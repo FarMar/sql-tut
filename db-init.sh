@@ -73,3 +73,16 @@ CREATE TABLE alignedannot (
 	FOREIGN KEY (onSequence) REFERENCES sequence(id)
 );
 
+## Now to populate the tables - needs to be in same order as setup of tables
+
+.separator "\t"
+.import "|tail -n +2 samples1.txt" sample
+.import "|tail -n +2 seqgroups1.txt" seqgroup
+.import "|tail -n +2 seqtypes.txt" seqtype
+.import "|tail -n +2 sequences1-D18-genomic.txt" sequence
+.import "|tail -n +2 sequences2-D36-RNA.txt" sequence
+.import "|tail -n +2 sequences3-D18-augustusGenePredict.txt" sequence
+.import "|tail -n +2 seqrelations1-D18augPred-vs-D18g.txt" seqrelation
+.import "|tail -n +2 seqrelations2-D36rna-vs-D18g.txt" seqrelation
+.import "|tail -n +2 alignedannot1-D18augPred-vs-NCBI-nr.txt" alignedannot
+

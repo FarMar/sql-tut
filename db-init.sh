@@ -1,5 +1,3 @@
-module load sqlite3
-
 sqlite3 hieracium.db
 
 ## Create tables, noting that FOREIGN KEYS dictate prerequisites
@@ -7,10 +5,10 @@ sqlite3 hieracium.db
 # Create sample table, note id is integer and primary key
 
 CREATE TABLE sample (
-  id integer PRIMARY KEY,
-  name text,
-  species text,
-  description text
+	id integer PRIMARY KEY,
+	name text,
+	species text,
+	description text
 );
 
 # Create seqgroup TABLE
@@ -31,15 +29,15 @@ CREATE TABLE seqtype (
 # Create sequence table, noting foreign keys which mean those tables need importing first
 
 CREATE TABLE sequence (
-  id integer PRIMARY KEY,
-  name text,
-  length integer,
-  belongsGroup integer,
-  isSample integer,
-  isType integer,
-  FOREIGN KEY (belongsGroup) REFERENCES seqgroup(id),
-  FOREIGN KEY (isSample) REFERENCES sample(id),
-  FOREIGN KEY (isType) REFERENCES seqtype(id)
+	id integer PRIMARY KEY,
+	name text,
+	length integer,
+	belongsGroup integer,
+	isSample integer,
+	isType integer,
+	FOREIGN KEY (belongsGroup) REFERENCES seqgroup(id),
+	FOREIGN KEY (isSample) REFERENCES sample(id),
+	FOREIGN KEY (isType) REFERENCES seqtype(id)
 );
 
 # Create seqrelation TABLE

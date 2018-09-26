@@ -121,9 +121,24 @@ Here, we're going to probe the `heiracium.db` database for answers to the querie
 mkdir backups
 cp heiracium.db ./backups/heiracium.db
 ```
+Then re-open the database and set up formatting:
+
+```
+sqlite3 heiracium.db
+.mode columns
+.headers on
+```
 
 1.	Can you list all details about all samples?  
+
+```
+SELECT * FROM sample;
+```
+
 2.	Can you list just the name and species for all samples? 
+
+
+
 3.	Can you list details of the first 10 sequences?
 4.	How many loaded sequences are there?
 5.	How many sequences are of the type “genomeAssembly”?

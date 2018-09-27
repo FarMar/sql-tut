@@ -165,6 +165,20 @@ WHERE seqtype.type IS 'genomeAssembly' ;
    Answer: 5000
    
 6.	How many loaded sequences are there of each different type? 
+
+```
+SELECT seqtype.type, count(name) FROM sequence 
+JOIN seqtype ON sequence.isType = seqtype.id 
+GROUP BY seqtype.type;
+```
+
+| Type | Counts |
+| --- | --- |
+| genomeAssembly | 5000 |
+| protein | 9031 |
+| trAssembly | 1622 |
+
+
 7.	How many sequences have a length greater than 1000?
 8.	How many sequences have a length greater than 1000 and are from sample “D36-s2-tr”?
 9.	What is the average length of all sequences?

@@ -24,3 +24,8 @@ SELECT count(name) FROM sequence;
 SELECT count(name) FROM sequence JOIN seqtype ON sequence.isType = seqtype.id 
 WHERE seqtype.type IS 'genomeAssembly' ;
 
+# 6.	How many loaded sequences are there of each different type? 
+
+SELECT seqtype.type, count(name) FROM sequence 
+JOIN seqtype ON sequence.isType = seqtype.id 
+GROUP BY seqtype.type;

@@ -224,7 +224,15 @@ WHERE seqtype.type IS 'protein';
 | protein | 621 |
 
 12.	How many annotations (alignedannot.annotation) contain the phrase “hypothetical”?
+
+```
+SELECT count(*) FROM alignedannot WHERE annotation LIKE '%hypothetical%';
+```
+   Answer = 1477
+   
 13.	Can you list details of the sequence named “D18-gDNA-s1638”, replacing the foreign keys with sensible info (e.g. replace ‘isSample’ id with actual sample name)?  
+
+
 14.	Does the sequence named “D18-gDNA-s1638” have any other sequences that align onto it (it’ll appear in seqRelation.parentSeq)?  List any such sequences. 
 Hint: You’ll need to make use of [the ‘AS’ keyword](https://www.w3schools.com/sql/sql_alias.asp).
 

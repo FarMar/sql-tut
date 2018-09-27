@@ -58,3 +58,25 @@ WHERE seqtype.type IS 'protein';
 
 # 12.	How many annotations (alignedannot.annotation) contain the phrase “hypothetical”?
 
+SELECT count(*) FROM alignedannot WHERE annotation LIKE '%hypothetical%';
+
+# 13.	Can you list details of the sequence named “D18-gDNA-s1638”, 
+#       replacing the foreign keys with sensible info (e.g. replace ‘isSample’ 
+#       id with actual sample name)? 
+
+## looks like JOIN is required - see Andrew's example:
+
+## name            seqgroup    sample      type            length    
+## --------------  ----------  ----------  --------------  ----------
+## D18-gDNA-s1638  D18-gDNA    D18-gDNA    genomeAssembly  17213   
+##
+
+SELECT sequence.id, sequence.name, sequence.length, seqgroup.name, seqtype.type, sample.name 
+FROM sequence 
+JOIN sample ON sequence.isSample = sample.id
+JOIN seqtype ON sequence.isType = seqtype.id  
+JOIN seqgroup ON sequence.belongsGroup = seqgroup.id
+WHERE sequence.name = 'D18-gDNA-s1638';
+
+## just needs cleaning up 
+

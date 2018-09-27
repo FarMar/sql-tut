@@ -232,8 +232,37 @@ SELECT count(*) FROM alignedannot WHERE annotation LIKE '%hypothetical%';
    
 13.	Can you list details of the sequence named “D18-gDNA-s1638”, replacing the foreign keys with sensible info (e.g. replace ‘isSample’ id with actual sample name)?  
 
+```
+SELECT sample.name, sequence.id, seqtype.type, sequence.length
+FROM sequence 
+JOIN sample ON sequence.isSample = sample.id
+JOIN seqtype ON sequence.isType = seqtype.id  
+JOIN seqgroup ON sequence.belongsGroup = seqgroup.id
+WHERE sequence.name = 'D18-gDNA-s1638';
+```
+| Name | ID | Type | Length |
+| --- | --- | --- | --- |
+| D18-gDNA | 1205 | genomeAssembly | 17213 |
+
 
 14.	Does the sequence named “D18-gDNA-s1638” have any other sequences that align onto it (it’ll appear in seqRelation.parentSeq)?  List any such sequences. 
 Hint: You’ll need to make use of [the ‘AS’ keyword](https://www.w3schools.com/sql/sql_alias.asp).
 
+```
+SELECT seqrelation.id, 
+  seqrelation.parentSeq AS parentSeqID, 
+  parentseq.name AS parentSeqName, 
+  seqrelation.childSeq AS childSeqID,
+  childseq.name AS childSeqName
+FROM seqrelation
+JOIN sequence AS parentseq ON parentseq.id=seqrelation.parentSeq
+JOIN sequence AS childseq ON childseq.id=seqrelation.childSeq
+WHERE parentseq.name='D18-gDNA-s1638';
+```
+| id | parentSeqID | parentSeqName | childSeqID | childSeqName |   
+|---------- | ----------- | -------------- | ---------- | ---------------- |
+|20         | 1205  |       D18-gDNA-s1638  | 5020   |     D36-s2_c4521-0-1
+|857        | 1205   |      D18-gDNA-s1638 | 5825     |   D36-s34_c4443-0-
+|3728       | 1205    |     D18-gDNA-s1638 | 8656      |  D18-gDNA-s1638.g
+|3729       | 1205     |    D18-gDNA-s1638 | 8657       | D18-gDNA-s1638.g
 

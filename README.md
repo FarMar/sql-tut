@@ -137,11 +137,33 @@ SELECT * FROM sample;
 
 2.	Can you list just the name and species for all samples? 
 
+```
+SELECT name, species FROM sample;
+```
 
 
 3.	Can you list details of the first 10 sequences?
+
+```
+SELECT * FROM sample limit 10;
+```
+
 4.	How many loaded sequences are there?
+
+```
+SELECT count(name) FROM sequence;
+```
+
+  Answer: 15653
+	
 5.	How many sequences are of the type “genomeAssembly”?
+
+```
+SELECT count(name) FROM sequence JOIN seqtype ON sequence.isType = seqtype.id 
+WHERE seqtype.type IS 'genomeAssembly' ;
+```
+   Answer: 5000
+   
 6.	How many loaded sequences are there of each different type? 
 7.	How many sequences have a length greater than 1000?
 8.	How many sequences have a length greater than 1000 and are from sample “D36-s2-tr”?

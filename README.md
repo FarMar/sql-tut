@@ -180,10 +180,49 @@ GROUP BY seqtype.type;
 
 
 7.	How many sequences have a length greater than 1000?
+
+```
+SELECT count(name) FROM sequence WHERE length > 1000;
+```
+   Answer = 7550
+   
 8.	How many sequences have a length greater than 1000 and are from sample “D36-s2-tr”?
+
+```
+SELECT count(sample.name) FROM sequence JOIN sample ON sequence.isSample = sample.id 
+WHERE length > 1000 AND sample.name = 'D36-s2-tr';
+```
+   Answer = 417
+   
 9.	What is the average length of all sequences?
+
+```
+SELECT avg(length) FROM sequence;
+```
+   Answer = 3682
+   
 10.	What is the average length of sequences of type “genomeAssembly”?
+
+```
+SELECT avg(length) FROM sequence JOIN seqtype ON sequence.isType = seqtype.id 
+WHERE seqtype.type IS 'genomeAssembly' ;
+```
+   Answer = 10008
+   
 11.	What is the average length of sequences of type “genomeAssembly” AND what is the average length of sequences of type “protein”? 
+
+```
+SELECT seqtype.type, avg(length) FROM sequence JOIN seqtype ON sequence.isType = seqtype.id 
+WHERE seqtype.type IS 'genomeAssembly' UNION
+SELECT seqtype.type, avg(length) FROM sequence JOIN seqtype ON sequence.isType = seqtype.id 
+WHERE seqtype.type IS 'protein';
+```
+
+| Type | Average Length |
+| --- | --- |
+| genomeAssembly | 10008 |
+| protein | 621 |
+
 12.	How many annotations (alignedannot.annotation) contain the phrase “hypothetical”?
 13.	Can you list details of the sequence named “D18-gDNA-s1638”, replacing the foreign keys with sensible info (e.g. replace ‘isSample’ id with actual sample name)?  
 14.	Does the sequence named “D18-gDNA-s1638” have any other sequences that align onto it (it’ll appear in seqRelation.parentSeq)?  List any such sequences. 
